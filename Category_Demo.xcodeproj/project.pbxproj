@@ -14,6 +14,10 @@
 		683A6C5E19E7F58800671F5C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 683A6C5D19E7F58800671F5C /* Images.xcassets */; };
 		683A6C6119E7F58800671F5C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 683A6C5F19E7F58800671F5C /* LaunchScreen.xib */; };
 		683A6C6D19E7F58800671F5C /* Category_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 683A6C6C19E7F58800671F5C /* Category_DemoTests.m */; };
+		683A6C7819E7F5B200671F5C /* MyAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 683A6C7719E7F5B200671F5C /* MyAlertView.m */; };
+		683A6C7B19E7F5E100671F5C /* MyAlertView+DelegateCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 683A6C7A19E7F5E100671F5C /* MyAlertView+DelegateCategory.m */; };
+		683A6C7F19E7FB3E00671F5C /* UIViewController+AlertViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 683A6C7E19E7FB3E00671F5C /* UIViewController+AlertViewDelegate.m */; };
+		683A6C8219E7FE3800671F5C /* Conclusion.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 683A6C8119E7FE3800671F5C /* Conclusion.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,13 @@
 		683A6C6619E7F58800671F5C /* Category_DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Category_DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		683A6C6B19E7F58800671F5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		683A6C6C19E7F58800671F5C /* Category_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Category_DemoTests.m; sourceTree = "<group>"; };
+		683A6C7619E7F5B200671F5C /* MyAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAlertView.h; sourceTree = "<group>"; };
+		683A6C7719E7F5B200671F5C /* MyAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAlertView.m; sourceTree = "<group>"; };
+		683A6C7919E7F5E100671F5C /* MyAlertView+DelegateCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MyAlertView+DelegateCategory.h"; sourceTree = "<group>"; };
+		683A6C7A19E7F5E100671F5C /* MyAlertView+DelegateCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MyAlertView+DelegateCategory.m"; sourceTree = "<group>"; };
+		683A6C7D19E7FB3E00671F5C /* UIViewController+AlertViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AlertViewDelegate.h"; sourceTree = "<group>"; };
+		683A6C7E19E7FB3E00671F5C /* UIViewController+AlertViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AlertViewDelegate.m"; sourceTree = "<group>"; };
+		683A6C8119E7FE3800671F5C /* Conclusion.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Conclusion.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +92,13 @@
 		683A6C4F19E7F58800671F5C /* Category_Demo */ = {
 			isa = PBXGroup;
 			children = (
+				683A6C8119E7FE3800671F5C /* Conclusion.rtf */,
 				683A6C5419E7F58800671F5C /* AppDelegate.h */,
 				683A6C5519E7F58800671F5C /* AppDelegate.m */,
 				683A6C5719E7F58800671F5C /* ViewController.h */,
 				683A6C5819E7F58800671F5C /* ViewController.m */,
+				683A6C7C19E7FAE600671F5C /* CaseA */,
+				683A6C8019E7FB4300671F5C /* CaseB */,
 				683A6C5A19E7F58800671F5C /* Main.storyboard */,
 				683A6C5D19E7F58800671F5C /* Images.xcassets */,
 				683A6C5F19E7F58800671F5C /* LaunchScreen.xib */,
@@ -117,6 +131,26 @@
 				683A6C6B19E7F58800671F5C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		683A6C7C19E7FAE600671F5C /* CaseA */ = {
+			isa = PBXGroup;
+			children = (
+				683A6C7619E7F5B200671F5C /* MyAlertView.h */,
+				683A6C7719E7F5B200671F5C /* MyAlertView.m */,
+				683A6C7919E7F5E100671F5C /* MyAlertView+DelegateCategory.h */,
+				683A6C7A19E7F5E100671F5C /* MyAlertView+DelegateCategory.m */,
+			);
+			name = CaseA;
+			sourceTree = "<group>";
+		};
+		683A6C8019E7FB4300671F5C /* CaseB */ = {
+			isa = PBXGroup;
+			children = (
+				683A6C7D19E7FB3E00671F5C /* UIViewController+AlertViewDelegate.h */,
+				683A6C7E19E7FB3E00671F5C /* UIViewController+AlertViewDelegate.m */,
+			);
+			name = CaseB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				683A6C5C19E7F58800671F5C /* Main.storyboard in Resources */,
+				683A6C8219E7FE3800671F5C /* Conclusion.rtf in Resources */,
 				683A6C6119E7F58800671F5C /* LaunchScreen.xib in Resources */,
 				683A6C5E19E7F58800671F5C /* Images.xcassets in Resources */,
 			);
@@ -220,8 +255,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				683A6C5919E7F58800671F5C /* ViewController.m in Sources */,
+				683A6C7819E7F5B200671F5C /* MyAlertView.m in Sources */,
 				683A6C5619E7F58800671F5C /* AppDelegate.m in Sources */,
+				683A6C7F19E7FB3E00671F5C /* UIViewController+AlertViewDelegate.m in Sources */,
 				683A6C5319E7F58800671F5C /* main.m in Sources */,
+				683A6C7B19E7F5E100671F5C /* MyAlertView+DelegateCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
